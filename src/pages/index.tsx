@@ -50,151 +50,145 @@ const Home = () => {
         </div>
       </section>
       <main>
-        <section className="section bg-alternate overflow-hidden">
-          <div className="container-fluid pb-5">
-            <header className="section-header mt-5">
-              <h1 className="lead-5 fw-600">Follow Your Favorate Web Apps</h1>
-              <p className="lead-4">
-                Developers can post DevLogs to update you on behind the scenes
-                developerment.
-              </p>
-            </header>
-            <Row className="align-items-center">
-              <Col xs={12} md={4}>
-                <h5 className="text-center text-md-left lead-5 fw-600">
-                  Realtime Tracking
-                </h5>
-                <p className="lead-2 text-center text-md-left">
-                  View in realtime where hypersentive individuals are and
-                  boundries on the 500 feet distance that is required
-                </p>
-              </Col>
-              <Col xs={12} md={8} className="text-center video-landing-small">
-                <img
-                  style={{
-                    borderRadius: "6px",
-                  }}
-                  width="100%"
-                  src="zone.png"
-                />
-              </Col>
-            </Row>
-            <div className="space-block" />
-            <Row className="align-items-center">
-              <Col xs={12} md={8} className="text-center video-landing-small">
-                <img
-                  style={{
-                    borderRadius: "6px",
-                  }}
-                  width="100%"
-                  src="details.png"
-                />
-              </Col>
-              <Col xs={12} md={4} className="pl-5">
-                <h5 className="text-center text-md-left lead-5 fw-600">
-                  Contact
-                </h5>
-                <p className="lead-2 text-center text-md-left">
-                  With just a single tap, you are given contact information on
-                  the hypersensitive indivudal
-                </p>
-              </Col>
-            </Row>
-          </div>
-        </section>
-        <section>
-          <Row>
-            <Col
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                paddingTop: "16px",
-              }}
-            >
-              <h3>Supported States</h3>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <div
-                style={{
-                  padding: "16px",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <img height="70px" width="130px" src="pa.png" />
-                <span>Pennsylvania</span>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                paddingTop: "16px",
-              }}
-            >
-              <h3>Pricing</h3>
-            </Col>
-          </Row>
-          <Row className="p-3">
-            <Col>
-              <Card>
-                <Card.Header>Individual</Card.Header>
-                <Card.Body>
-                  <div
-                    style={{
-                      height: "50px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "flex-end",
-                    }}
-                  >
-                    <h2>$5</h2>
-                    <span style={{ marginBottom: "8px" }}>/month</span>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card>
-                <Card.Header>Company</Card.Header>
-                <Card.Body>
-                  <div
-                    style={{
-                      height: "50px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <a href="mailto:matt@progressiveapp.store">
-                      <span
-                        style={{
-                          fontSize: "18px",
-                        }}
-                      >
-                        Contact Us
-                      </span>
-                    </a>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </section>
-        <section className="section pt-5">
-          <Row className="row-gap-y text-center text-default justify-content-md-center mt-5">
-            <Col xs={12}>
-              <h5 className="lead-3">
-                <a href="https://nospray.us/signup">Sign up</a> now for a{" "}
-                <strong>1 month free</strong> trial
+        <div className="container-fluid pb-5">
+          <header className="section-header mt-5">
+            <h1 className="lead-5 fw-600">Follow Your Favorate Web Apps</h1>
+            <p className="lead-4">
+              Developers can post DevLogs to update you on behind the scenes
+              developerment.
+            </p>
+          </header>
+          <Row className="align-items-center">
+            <Col xs={12} md={4}>
+              <h5 className="text-center text-md-left lead-5 fw-600">
+                Realtime Tracking
               </h5>
+              <p className="lead-2 text-center text-md-left">
+                View in realtime where hypersentive individuals are and
+                boundries on the 500 feet distance that is required
+              </p>
+            </Col>
+            <Col xs={12} md={8} className="text-center video-landing-small">
+              <img
+                style={{
+                  borderRadius: "6px",
+                }}
+                width="100%"
+                src="zone.png"
+              />
             </Col>
           </Row>
-        </section>
+          <div className="space-block" />
+          <Row className="align-items-center">
+            <Col xs={12} md={8} className="text-center video-landing-small">
+              <img
+                style={{
+                  borderRadius: "6px",
+                }}
+                width="100%"
+                src="details.png"
+              />
+            </Col>
+            <Col xs={12} md={4} className="pl-5">
+              <h5 className="text-center text-md-left lead-5 fw-600">
+                Contact
+              </h5>
+              <p className="lead-2 text-center text-md-left">
+                With just a single tap, you are given contact information on the
+                hypersensitive indivudal
+              </p>
+            </Col>
+          </Row>
+        </div>
+        <Row>
+          <Col
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "16px",
+            }}
+          >
+            <h3>Supported States</h3>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div
+              style={{
+                padding: "16px",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <img height="70px" width="130px" src="pa.png" />
+              <span>Pennsylvania</span>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "16px",
+            }}
+          >
+            <h3>Pricing</h3>
+          </Col>
+        </Row>
+        <Row className="p-3">
+          <Col>
+            <Card>
+              <Card.Header>Individual</Card.Header>
+              <Card.Body>
+                <div
+                  style={{
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "flex-end",
+                  }}
+                >
+                  <h2>$5</h2>
+                  <span style={{ marginBottom: "8px" }}>/month</span>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Header>Company</Card.Header>
+              <Card.Body>
+                <div
+                  style={{
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <a href="mailto:matt@progressiveapp.store">
+                    <span
+                      style={{
+                        fontSize: "18px",
+                      }}
+                    >
+                      Contact Us
+                    </span>
+                  </a>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="row-gap-y text-center text-default justify-content-md-center mt-5">
+          <Col xs={12}>
+            <h5 className="lead-3">
+              <a href="https://nospray.us/signup">Sign up</a> now for a{" "}
+              <strong>1 month free</strong> trial
+            </h5>
+          </Col>
+        </Row>
       </main>
     </Layout>
   )
