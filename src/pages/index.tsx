@@ -120,7 +120,7 @@ const Home = () => {
                 flexDirection: "column",
               }}
             >
-              <img height="70px" width="130px" src="pa.png" />
+              <img height="70px" width="130px" src="pa.svg" />
               <span>Pennsylvania</span>
             </div>
           </Col>
