@@ -119,7 +119,8 @@ const Home = () => {
               <div
                 style={{
                   padding: "16px",
-                  display: "block",
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
                 <img height="70px" width="130px" src="pa.png" />
@@ -170,7 +171,13 @@ const Home = () => {
                     }}
                   >
                     <a href="mailto:matt@progressiveapp.store">
-                      <span>Contact Us</span>
+                      <span
+                        style={{
+                          fontSize: "18px",
+                        }}
+                      >
+                        Contact Us
+                      </span>
                     </a>
                   </div>
                 </Card.Body>
