@@ -105,13 +105,13 @@ const Home = () => {
           <Row>
             <Col>
               <Card>
-                <Card.Header></Card.Header>
+                <Card.Header>Individual</Card.Header>
                 <Card.Body></Card.Body>
               </Card>
             </Col>
             <Col>
               <Card>
-                <Card.Header></Card.Header>
+                <Card.Header>Company</Card.Header>
                 <Card.Body></Card.Body>
               </Card>
             </Col>
