@@ -125,7 +125,13 @@ const Home = () => {
               }}
             >
               <img height="70px" width="130px" src="pa.svg" />
-              <span>Pennsylvania</span>
+              <span
+                style={{
+                  marginLeft: "8px",
+                }}
+              >
+                Pennsylvania
+              </span>
             </div>
           </Col>
         </Row>
