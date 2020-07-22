@@ -181,7 +181,7 @@ const Home = () => {
             </Card>
           </Col>
         </Row>
-        <Row className="row-gap-y text-center text-default justify-content-md-center mt-5">
+        <Row className="row-gap-y text-center text-default justify-content-md-center mt-5 mb-5">
           <Col xs={12}>
             <h5 className="lead-3">
               <a href="https://nospray.us/signup">Sign up</a> now for a{" "}
