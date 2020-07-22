@@ -10,10 +10,10 @@ interface Props {
 }
 
 const Layout = ({ children, title, description, image, url }: Props) => {
-  const defaultDescription = "The largest store of progressive apps."
+  const defaultDescription = "Hypersensitive Individual Registar"
   const defaultImage = ""
-  const defaultTitle = "ProgressiveApp.Store"
-  const defaultUrl = "https://progressiveapp.store"
+  const defaultTitle = "NoSpray"
+  const defaultUrl = "https://info.nospray.us"
 
   return (
     <div className="page">
