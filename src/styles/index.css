@@ -289,3 +289,7 @@ html {
   filter: contrast(0%);
   cursor: pointer;
 }
+
+.card {
+  background-color: var(--secondary-bg-color);
+}

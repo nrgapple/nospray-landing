@@ -33,8 +33,10 @@ const Home = () => {
             >
               {" "}
               <h1 className="fw-600">NoSpray</h1>
-              <p className="lead-2">Hypersensitive Individual Registar</p>
-              <Button href="">Sign Up</Button>
+              <p className="lead-2">
+                Pesticide Hypersensitive Individual Registar
+              </p>
+              <Button href="https://nospray.us/signup">Sign Up</Button>
             </Col>
             <Col xs={12} className="p-5">
               <img
@@ -52,28 +54,30 @@ const Home = () => {
       <main>
         <div className="container-fluid pb-5">
           <header className="section-header mt-5">
-            <h1 className="lead-5 fw-600">Follow Your Favorate Web Apps</h1>
+            <h1 className="lead-5 fw-600">Find Hypersensitive Individuals</h1>
             <p className="lead-4">
-              Developers can post DevLogs to update you on behind the scenes
-              developerment.
+              Using our intelligent map, you can easily locate hypersensitive
+              individuals in <strong>realtime</strong> or right from the office.
+              Our application is one of the first that can be used as either a
+              website or installed natively on a mobile device.
             </p>
           </header>
           <Row className="align-items-center">
-            <Col xs={12} md={4}>
+            <Col xs={12} md={8}>
               <h5 className="text-center text-md-left lead-5 fw-600">
                 Realtime Tracking
               </h5>
               <p className="lead-2 text-center text-md-left">
-                View in realtime where hypersentive individuals are and
-                boundries on the 500 feet distance that is required
+                View in <strong>realtime</strong> where hypersentive individuals
+                are located in order to ensure a safe and secure spray.
               </p>
             </Col>
-            <Col xs={12} md={8} className="text-center video-landing-small">
+            <Col xs={12} md={4} className="text-center">
               <img
                 style={{
                   borderRadius: "6px",
                 }}
-                width="100%"
+                height="400px"
                 src="zone.png"
               />
             </Col>
@@ -91,11 +95,11 @@ const Home = () => {
             </Col>
             <Col xs={12} md={4} className="pl-5">
               <h5 className="text-center text-md-left lead-5 fw-600">
-                Contact
+                Simple Contact
               </h5>
               <p className="lead-2 text-center text-md-left">
                 With just a single tap, you are given contact information on the
-                hypersensitive indivudal
+                individual and easy access to call or email.
               </p>
             </Col>
           </Row>
@@ -170,7 +174,7 @@ const Home = () => {
                   <a href="mailto:matt@progressiveapp.store">
                     <span
                       style={{
-                        fontSize: "18px",
+                        fontSize: "1.5rem",
                       }}
                     >
                       Contact Us
