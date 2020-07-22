@@ -62,8 +62,8 @@ const Home = () => {
               website or installed natively on a mobile device.
             </p>
           </header>
-          <Row className="align-items-center">
-            <Col xs={12} md={8}>
+          <Row className="align-items-center justify-content-md-center">
+            <Col xs={12} md={6}>
               <h5 className="text-center text-md-left lead-5 fw-600">
                 Realtime Tracking
               </h5>
@@ -72,7 +72,7 @@ const Home = () => {
                 are located in order to ensure a safe and secure spray.
               </p>
             </Col>
-            <Col xs={12} md={4} className="text-center">
+            <Col xs={12} md={2} className="text-center">
               <img
                 style={{
                   borderRadius: "6px",
@@ -83,8 +83,8 @@ const Home = () => {
             </Col>
           </Row>
           <div className="space-block" />
-          <Row className="align-items-center">
-            <Col xs={12} md={8} className="text-center video-landing-small">
+          <Row className="align-items-center justify-content-md-center">
+            <Col xs={12} md={6}>
               <img
                 style={{
                   borderRadius: "6px",
@@ -93,7 +93,7 @@ const Home = () => {
                 src="details.png"
               />
             </Col>
-            <Col xs={12} md={4} className="pl-5">
+            <Col xs={12} md={2} className="pl-5">
               <h5 className="text-center text-md-left lead-5 fw-600">
                 Simple Contacting
               </h5>
