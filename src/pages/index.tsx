@@ -14,11 +14,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar className="navbar navbar-expand-md navbar-default" sticky="top">
-        <Container>
-          <NavbarBrand className="HomeNavBrand">
-            <h1 className="pl-3">{Branding.storeName}</h1>
-          </NavbarBrand>
-        </Container>
+        <NavbarBrand className="HomeNavBrand">
+          <img
+            className="br-6"
+            height="50px"
+            width="50px"
+            src="no-spray-192x192.png"
+          />
+          <h1 className="pl-3">{Branding.storeName}</h1>
+        </NavbarBrand>
       </Navbar>
       <section>
         <div className="container-fluid">
@@ -32,7 +36,7 @@ const Home = () => {
               <p className="lead-2">Hypersensitive Individual Registar</p>
               <Button href="">Sign Up</Button>
             </Col>
-            <Col xs={12} className="ml-auto mt-5 video-landing-full">
+            <Col xs={12} className="p-5">
               <img
                 style={{
                   borderRadius: "6px",
@@ -58,10 +62,11 @@ const Home = () => {
             <Row className="align-items-center">
               <Col xs={12} md={4} className="pl-5">
                 <h5 className="text-center text-md-left lead-5 fw-600">
-                  Add DevLog
+                  Realtime Tracking
                 </h5>
                 <p className="lead-2 text-center text-md-left">
-                  Just enter your app and a quick markdown body.
+                  View in realtime where hypersentive individuals are and
+                  boundries on the 500 feet distance that is required
                 </p>
               </Col>
               <Col xs={12} md={8} className="text-center video-landing-small">
@@ -87,10 +92,11 @@ const Home = () => {
               </Col>
               <Col xs={12} md={4} className="pl-5">
                 <h5 className="text-center text-md-left lead-5 fw-600">
-                  Add DevLog
+                  Contact
                 </h5>
                 <p className="lead-2 text-center text-md-left">
-                  Just enter your app and a quick markdown body.
+                  With just a single tap, you are given contact information on
+                  the hypersensitive indivudal
                 </p>
               </Col>
             </Row>
@@ -98,21 +104,52 @@ const Home = () => {
         </section>
         <section>
           <Row>
-            <Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                paddingTop: "16px",
+              }}
+            >
               <h3>Pricing</h3>
             </Col>
           </Row>
-          <Row>
+          <Row className="p-3">
             <Col>
               <Card>
                 <Card.Header>Individual</Card.Header>
-                <Card.Body></Card.Body>
+                <Card.Body>
+                  <div
+                    style={{
+                      height: "50px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "flex-end",
+                    }}
+                  >
+                    <h2>$5</h2>
+                    <span style={{ marginBottom: "8px" }}>/month</span>
+                  </div>
+                </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card>
                 <Card.Header>Company</Card.Header>
-                <Card.Body></Card.Body>
+                <Card.Body>
+                  <div
+                    style={{
+                      height: "50px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <a href="mailto:matt@progressiveapp.store">
+                      <span>Contact Us</span>
+                    </a>
+                  </div>
+                </Card.Body>
               </Card>
             </Col>
           </Row>
