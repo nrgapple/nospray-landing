@@ -95,7 +95,7 @@ const Home = () => {
             </Col>
             <Col xs={12} md={4} className="pl-5">
               <h5 className="text-center text-md-left lead-5 fw-600">
-                Simple Contact
+                Simple Contacting
               </h5>
               <p className="lead-2 text-center text-md-left">
                 With just a single tap, you are given contact information on the
