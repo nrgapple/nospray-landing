@@ -273,6 +273,10 @@ html {
   -webkit-tap-highlight-color: var(---dark);
 }
 
+.br-6 {
+  border-radius: 6px;
+}
+
 .logo-header {
   opacity: 0.5;
   filter: contrast(0%);
