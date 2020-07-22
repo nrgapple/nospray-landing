@@ -111,6 +111,30 @@ const Home = () => {
                 paddingTop: "16px",
               }}
             >
+              <h3>Supported States</h3>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div
+                style={{
+                  padding: "16px",
+                  display: "block",
+                }}
+              >
+                <img height="70px" width="130px" src="pa.png" />
+                <span>Pennsylvania</span>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                paddingTop: "16px",
+              }}
+            >
               <h3>Pricing</h3>
             </Col>
           </Row>
