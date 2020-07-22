@@ -19,7 +19,7 @@ body {
 }
 
 body {
-  font-family: ibm plex mono, monospace;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   color: var(--type-color);
   text-align: left;
   background-color: var(--bg-color);
