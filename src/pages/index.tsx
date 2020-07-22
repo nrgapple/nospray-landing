@@ -60,7 +60,7 @@ const Home = () => {
               </p>
             </header>
             <Row className="align-items-center">
-              <Col xs={12} md={4} className="pl-5">
+              <Col xs={12} md={4}>
                 <h5 className="text-center text-md-left lead-5 fw-600">
                   Realtime Tracking
                 </h5>
