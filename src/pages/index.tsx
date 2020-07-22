@@ -29,7 +29,7 @@ const Home = () => {
           <Row>
             <Col
               xs={12}
-              className="align-self-center ml-auto mb-5 text-center pl-3 pr-3"
+              className="align-self-center ml-auto mb-5 mt-5 text-center pl-3 pr-3"
             >
               {" "}
               <h1 className="fw-600">NoSpray</h1>
