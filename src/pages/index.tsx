@@ -24,7 +24,7 @@ const Home = () => {
           />
           <h1 className="pl-3">{Branding.storeName}</h1>
         </NavbarBrand>
-        <Button variant="success" href="https://nospray.us">
+        <Button variant="success" href="https://app.nospray.us">
           Hop In
         </Button>
       </Navbar>
@@ -38,9 +38,9 @@ const Home = () => {
               {" "}
               <h2 className="p-5">
                 <strong>Interactive</strong> Pesticide Hypersensitive Individual
-                Registar
+                Registry
               </h2>
-              <Button href="https://nospray.us/signup">Sign Up</Button>
+              <Button href="https://app.nospray.us/signup">Sign Up</Button>
             </Col>
             <Col xs={12} className="p-md-5 pt-5">
               <img
@@ -58,7 +58,9 @@ const Home = () => {
       <main>
         <div className="container-fluid pb-5">
           <header className="section-header mt-5">
-            <h1 className="lead-5 fw-600">Find Hypersensitive Individuals</h1>
+            <h1 className="lead-5 fw-600">
+              Find Registered Hypersensitive Individuals
+            </h1>
             <p className="lead-3">
               Using our intelligent map, you can easily locate hypersensitive
               individuals in <strong>realtime</strong> or right from the office.
@@ -69,11 +71,12 @@ const Home = () => {
           <Row className="align-items-center justify-content-md-center">
             <Col xs={12} md={4}>
               <h5 className="text-center text-md-left lead-5 fw-600">
-                Realtime Tracking
+                Realtime Tracker
               </h5>
               <p className="lead-2 text-center text-md-left">
-                View in <strong>realtime</strong> where hypersentive individuals
-                are located in order to ensure a safe and secure spray.
+                View in <strong>realtime</strong> where hypersensitive
+                individuals are located in order to ensure a safe and secure
+                spray.
               </p>
             </Col>
             <Col xs={12} md={6} className="phone-container">
@@ -95,11 +98,11 @@ const Home = () => {
             </Col>
             <Col xs={12} md={6} className="pt-2">
               <h5 className="lead-5 text-center text-md-left fw-600">
-                Simple Contacting
+                Instant Contact
               </h5>
               <p className="lead-2 text-center text-md-left">
-                With just a single tap, you are given contact information on the
-                individual and easy access to call or email.
+                Tap on the data point and get access to an individuals contact
+                information to notify them via phone or email.
               </p>
             </Col>
           </Row>
@@ -190,7 +193,7 @@ const Home = () => {
         <Row className="row-gap-y text-center text-default justify-content-md-center mt-5 mb-5">
           <Col xs={12}>
             <h5 className="lead-3">
-              <a href="https://nospray.us/signup">Sign up</a> now for a{" "}
+              <a href="https://app.nospray.us/signup">Sign up</a> now for a{" "}
               <strong>1 month free</strong> trial
             </h5>
           </Col>
