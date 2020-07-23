@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col"
 import { Navbar, NavbarBrand, Card, Button, ButtonGroup } from "react-bootstrap"
 import Layout from "../components/Layout"
 import Branding from "../util/banding"
+import Phone from "../components/Phone"
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
       </Navbar>
       <section>
         <div className="container-fluid">
-          <Row>
+          <Row className="px-md-5">
             <Col
               xs={12}
               className="align-self-center ml-auto mt-5 text-center pl-3 pr-3"
@@ -38,7 +39,7 @@ const Home = () => {
               </p>
               <Button href="https://nospray.us/signup">Sign Up</Button>
             </Col>
-            <Col xs={12} className="p-5">
+            <Col xs={12} className="p-md-5 pt-5">
               <img
                 style={{
                   borderRadius: "6px",
@@ -55,7 +56,7 @@ const Home = () => {
         <div className="container-fluid pb-5">
           <header className="section-header mt-5">
             <h1 className="lead-5 fw-600">Find Hypersensitive Individuals</h1>
-            <p className="lead-4">
+            <p className="lead-3">
               Using our intelligent map, you can easily locate hypersensitive
               individuals in <strong>realtime</strong> or right from the office.
               Our application is one of the first that can be used as either a
@@ -63,7 +64,7 @@ const Home = () => {
             </p>
           </header>
           <Row className="align-items-center justify-content-md-center">
-            <Col xs={12} md={6}>
+            <Col xs={12} md={4}>
               <h5 className="text-center text-md-left lead-5 fw-600">
                 Realtime Tracking
               </h5>
@@ -72,18 +73,14 @@ const Home = () => {
                 are located in order to ensure a safe and secure spray.
               </p>
             </Col>
-            <Col xs={12} md={2} className="text-center">
-              <img
-                style={{
-                  borderRadius: "6px",
-                }}
-                height="400px"
-                src="zone.png"
-              />
+            <Col xs={12} md={6} className="phone-container">
+              <Phone>
+                <img src="zone.png" width="100%" />
+              </Phone>
             </Col>
           </Row>
           <div className="space-block" />
-          <Row className="align-items-center justify-content-md-center">
+          <Row className="align-items-center justify-content-md-center px-md-5">
             <Col xs={12} md={6}>
               <img
                 style={{
@@ -93,8 +90,8 @@ const Home = () => {
                 src="details.png"
               />
             </Col>
-            <Col xs={12} md={2} className="pl-5">
-              <h5 className="text-center text-md-left lead-5 fw-600">
+            <Col xs={12} md={6} className="pt-2">
+              <h5 className="lead-5 text-center text-md-left fw-600">
                 Simple Contacting
               </h5>
               <p className="lead-2 text-center text-md-left">
@@ -115,23 +112,25 @@ const Home = () => {
             <h3>Supported States</h3>
           </Col>
         </Row>
-        <Row>
+        <Row className="px-md-5 align-items-center justify-content-md-center">
           <Col>
             <div
               style={{
                 padding: "16px",
                 display: "flex",
-                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
-              <img height="70px" width="130px" src="pa.svg" />
-              <span
-                style={{
-                  marginLeft: "8px",
-                }}
-              >
-                Pennsylvania
-              </span>
+              <div>
+                <img height="70px" width="130px" src="pa.svg" />
+                <div
+                  style={{
+                    marginLeft: "8px",
+                  }}
+                >
+                  Pennsylvania
+                </div>
+              </div>
             </div>
           </Col>
         </Row>
@@ -146,7 +145,7 @@ const Home = () => {
             <h3>Pricing</h3>
           </Col>
         </Row>
-        <Row className="p-3">
+        <Row className="p-3 px-5">
           <Col>
             <Card>
               <Card.Header>Individual</Card.Header>
@@ -178,13 +177,7 @@ const Home = () => {
                   }}
                 >
                   <a href="mailto:matt@progressiveapp.store">
-                    <span
-                      style={{
-                        fontSize: "1.5rem",
-                      }}
-                    >
-                      Contact Us
-                    </span>
+                    <span className="lead-3">Contact Us</span>
                   </a>
                 </div>
               </Card.Body>

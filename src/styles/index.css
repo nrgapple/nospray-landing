@@ -16,6 +16,7 @@ body {
   --main-action-color: #74b9ff;
   --secondary-action-color: #9d70ff;
   --bg-stroke-color: #3f4448;
+  --iphone: black;
 }
 
 body {
@@ -292,4 +293,89 @@ html {
 
 .card {
   background-color: var(--secondary-bg-color);
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  display: flex;
+  width: 36vh;
+  align-items: center;
+}
+
+.iphone,
+.screen {
+  border: 0.5vh solid var(--type-color);
+}
+
+.iphone {
+  padding: 10vh 1.5vh;
+  border-radius: 6vh;
+  position: relative;
+}
+
+.home,
+.camera,
+.proximity,
+.speaker {
+  position: absolute;
+}
+
+.home,
+.camera,
+.proximity {
+  border-radius: 50%;
+}
+
+.speaker,
+.proximity {
+  background-color: var(--type-color);
+}
+
+.home,
+.speaker,
+.camera,
+.proximity {
+  left: 50%;
+}
+
+.home,
+.speaker {
+  margin-left: -3vh;
+  width: 6vh;
+}
+
+.home,
+.camera {
+  border: 0.5vh solid var(--type-color);
+}
+
+.home {
+  height: 6vh;
+  bottom: 2vh;
+  background: transparent;
+}
+
+.speaker {
+  top: 4.75vh;
+  height: 0.5vh;
+  border-radius: 0.5vh;
+}
+
+.camera {
+  width: 1.5vh;
+  height: 1.5vh;
+  top: 4.25vh;
+  margin-left: -6.5vh;
+}
+
+.proximity {
+  width: 1vh;
+  height: 1vh;
+  top: 2vh;
+  margin-left: -0.5vh;
 }
