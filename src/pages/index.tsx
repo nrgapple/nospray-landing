@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { Navbar, NavbarBrand, Card, Button, ButtonGroup } from "react-bootstrap"
@@ -38,7 +37,7 @@ const Home = () => {
               {" "}
               <h2 className="p-5">
                 <strong>Interactive</strong> Pesticide Hypersensitive Individual
-                Registar
+                Registry
               </h2>
               <Button href="https://nospray.us/signup">Sign Up</Button>
             </Col>
@@ -69,11 +68,12 @@ const Home = () => {
           <Row className="align-items-center justify-content-md-center">
             <Col xs={12} md={4}>
               <h5 className="text-center text-md-left lead-5 fw-600">
-                Realtime Tracking
+                Realtime Tracker
               </h5>
               <p className="lead-2 text-center text-md-left">
-                View in <strong>realtime</strong> where hypersentive individuals
-                are located in order to ensure a safe and secure spray.
+                View in <strong>realtime</strong> where hypersensitive
+                individuals are located in order to ensure a safe and secure
+                spray.
               </p>
             </Col>
             <Col xs={12} md={6} className="phone-container">
@@ -95,7 +95,7 @@ const Home = () => {
             </Col>
             <Col xs={12} md={6} className="pt-2">
               <h5 className="lead-5 text-center text-md-left fw-600">
-                Simple Contacting
+                Instant Contact
               </h5>
               <p className="lead-2 text-center text-md-left">
                 With just a single tap, you are given contact information on the
@@ -179,7 +179,7 @@ const Home = () => {
                     alignItems: "center",
                   }}
                 >
-                  <a href="mailto:matt@progressiveapp.store">
+                  <a href="mailto:info@nospray.us">
                     <span className="lead-3">Contact Us</span>
                   </a>
                 </div>
