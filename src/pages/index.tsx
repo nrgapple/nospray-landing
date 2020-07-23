@@ -24,6 +24,9 @@ const Home = () => {
           />
           <h1 className="pl-3">{Branding.storeName}</h1>
         </NavbarBrand>
+        <Button variant="success" href="https://nospray.us">
+          Hop In
+        </Button>
       </Navbar>
       <section>
         <div className="container-fluid">
@@ -33,10 +36,10 @@ const Home = () => {
               className="align-self-center ml-auto mt-5 text-center pl-3 pr-3"
             >
               {" "}
-              <h1 className="fw-600">NoSpray</h1>
-              <p className="lead-2">
-                Pesticide Hypersensitive Individual Registar
-              </p>
+              <h2 className="p-5">
+                <strong>Interactive</strong> Pesticide Hypersensitive Individual
+                Registar
+              </h2>
               <Button href="https://nospray.us/signup">Sign Up</Button>
             </Col>
             <Col xs={12} className="p-md-5 pt-5">
