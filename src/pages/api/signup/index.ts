@@ -1,11 +1,32 @@
-import next, { NextApiRequest, NextApiResponse } from "next"
+import { NextApiRequest, NextApiResponse } from "next"
+import Cors from "cors"
+
+const initMiddleware = (middleware: any) => {
+  return (req: any, res: any) =>
+    new Promise((resolve, reject) => {
+      middleware(req, res, (result: any) => {
+        if (result instanceof Error) {
+          return reject(result)
+        }
+        return resolve(result)
+      })
+    })
+}
+
+const cors = initMiddleware(
+  Cors({
+    methods: ["GET", "POST", "OPTIONS"],
+  })
+)
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  await cors(req, res)
+  if (req.method !== "POST") {
+    res.status(404).end()
+  }
   const {
-    query: { id, last },
+    body: { email, password, id, lastName },
   } = req
-
-  console.log({ id, last })
 
   const puppeteer = require("puppeteer")
   const browser = await puppeteer.launch()
@@ -23,14 +44,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   await page.click("table #ctl00_cphResults_CertId")
 
   await page.type("table #ctl00_cphResults_CertId", id)
-  await page.type("table #ctl00_cphResults_LastName", last)
+  await page.type("table #ctl00_cphResults_LastName", lastName)
 
   await page.waitForSelector("table #ctl00_cphResults_btnSearch")
   await page.click("table #ctl00_cphResults_btnSearch")
 
   await page.on("response", async (response: any) => {
-    //console.log(response)
-    //console.log("here")
     data = response
   })
   await navigationPromise
@@ -40,7 +59,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     console.log("timeout")
     res.status(403).end()
   }
-  //page.waitForSelector("#ctl00_cphResults_vsSummary"),
   const element = await page.$(
     "#ctl00_cphResults_rptApplicators_ctl00_CertificationID"
   )
@@ -64,12 +82,19 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: 
-          plan: plan?.toUpperCase(),
+          email: email,
+          password: password,
+          certId: id,
         }),
       }
     )
-
-    res.send(text)
+    res.status(resp.status)
+    console.log(resp.status)
+    if (resp.status !== 200) {
+      const respJson = await resp.json()
+      res.send(respJson)
+    } else {
+      res.end()
+    }
   }
 }
