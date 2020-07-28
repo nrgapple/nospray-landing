@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { Navbar, NavbarBrand, Card, Button, ButtonGroup } from "react-bootstrap"
@@ -182,7 +181,7 @@ const Home = () => {
                     alignItems: "center",
                   }}
                 >
-                  <a href="mailto:matt@progressiveapp.store">
+                  <a href="mailto:info@nospray.us">
                     <span className="lead-3">Contact Us</span>
                   </a>
                 </div>
