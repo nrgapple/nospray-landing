@@ -26,6 +26,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   }
   const {
     body: { email, password, id, lastName },
+    headers: { origin },
   } = req
 
   const puppeteer = require("puppeteer")
@@ -80,6 +81,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
+          origin: origin!,
         },
         body: JSON.stringify({
           email: email,
