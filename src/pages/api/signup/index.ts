@@ -30,7 +30,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } = req
 
   const playwright = require("playwright")
-  const browser = await playwright.chromium.launch()
+  const browser = await playwright.firefox.launch()
   const page = await browser.newPage()
   let data
   const navigationPromise = page.waitForNavigation()
