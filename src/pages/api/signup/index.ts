@@ -29,8 +29,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     headers: { origin },
   } = req
 
-  const puppeteer = require("puppeteer")
-  const browser = await puppeteer.launch()
+  const playwright = require("playwright")
+  const browser = await playwright.chromium.launch()
   const page = await browser.newPage()
   let data
   const navigationPromise = page.waitForNavigation()

@@ -13,7 +13,7 @@
     "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
     "next": "9.4.4",
-    "puppeteer": "^5.2.1",
+    "playwright": "^1.2.1",
     "react": "16.13.1",
     "react-bootstrap": "^1.1.1",
     "react-device-frame": "^2.0.4",
