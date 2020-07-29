@@ -163,7 +163,7 @@ const Home = () => {
                     alignItems: "flex-end",
                   }}
                 >
-                  <h2>$5</h2>
+                  <h2>$8</h2>
                   <span style={{ marginBottom: "8px" }}>/month</span>
                 </div>
               </Card.Body>
