@@ -64,7 +64,7 @@ const Home = () => {
               Using our intelligent map, you can easily locate hypersensitive
               individuals in <strong>realtime</strong> or right from the office.
               Our application is one of the first that can be used as either a
-              website or installed natively on a mobile device.
+              website or installed directly on a mobile device's home screen.
             </p>
           </header>
           <Row className="align-items-center justify-content-md-center">
