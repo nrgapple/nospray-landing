@@ -32,7 +32,7 @@ const Home = () => {
           <Row className="px-md-5">
             <Col
               xs={12}
-              className="align-self-center ml-auto mt-5 text-center pl-3 pr-3"
+              className="align-self-center ml-auto text-center pl-3 pr-3"
             >
               {" "}
               <h2 className="p-5">
@@ -42,14 +42,25 @@ const Home = () => {
               <Button href="https://app.nospray.us/signup">Sign Up</Button>
             </Col>
             <Col xs={12} className="p-md-5 pt-5">
-              <img
+              <video
+                className="media-landing"
+                height="100%"
+                width="100%"
+                autoPlay
+                loop
+                muted
+                poster="map.png"
+              >
+                <source src="demo.mp4" type="video/mp4"></source>
+              </video>
+              {/* <img
                 style={{
                   borderRadius: "6px",
                 }}
                 height="100%"
                 width="100%"
                 src="map.png"
-              />
+              /> */}
             </Col>
           </Row>
         </div>
@@ -87,13 +98,7 @@ const Home = () => {
           <div className="space-block" />
           <Row className="align-items-center justify-content-md-center px-md-5">
             <Col xs={12} md={6}>
-              <img
-                style={{
-                  borderRadius: "6px",
-                }}
-                width="100%"
-                src="details.png"
-              />
+              <img className="media-landing" width="100%" src="details.png" />
             </Col>
             <Col xs={12} md={6} className="pt-2">
               <h5 className="lead-5 text-center text-md-left fw-600">
@@ -168,7 +173,7 @@ const Home = () => {
                     <span className="mb-8">/month</span>
                   </div>
                   <div>
-                    <h2>OR</h2>
+                    <span>OR</span>
                   </div>
                   <div className="px-5 text-center">
                     <h2>$86</h2>

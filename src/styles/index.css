@@ -161,6 +161,14 @@ body {
   backdrop-filter: blur(5px);
 }
 
+.media-landing {
+  margin: auto;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+}
+
 .HomeNavBrand {
   display: flex;
   align-items: center;
