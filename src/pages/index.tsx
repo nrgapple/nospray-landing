@@ -29,7 +29,7 @@ const Home = () => {
       </Navbar>
       <section>
         <div className="container-fluid">
-          <Row className="px-md-5">
+          <Row className="px-md-5 align-items-center justify-content-md-center">
             <Col
               xs={12}
               className="align-self-center ml-auto text-center pl-3 pr-3"
@@ -41,7 +41,7 @@ const Home = () => {
               </h2>
               <Button href="https://app.nospray.us/signup">Sign Up</Button>
             </Col>
-            <Col xs={12} className="p-md-5 pt-5">
+            <Col xs={12} lg={8} className="pt-5">
               <video
                 className="media-landing"
                 height="100%"
