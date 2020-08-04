@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-family: Lato, FfMarkRegularNarrow, Arial, sans-serif;
   color: var(--type-color);
   text-align: left;
   background-color: var(--bg-color);
