@@ -151,31 +151,40 @@ const Home = () => {
           </Col>
         </Row>
         <Row className="p-3 px-5">
-          <Col>
-            <Card>
+          <Col sm="12" md="6">
+            <Card className="mb-5">
               <Card.Header>Individual</Card.Header>
               <Card.Body>
                 <div
                   style={{
-                    height: "50px",
                     display: "flex",
+                    height: "60px",
                     justifyContent: "center",
-                    alignItems: "flex-end",
+                    alignItems: "center",
                   }}
                 >
-                  <h2>$8</h2>
-                  <span style={{ marginBottom: "8px" }}>/month</span>
+                  <div className="px-5 text-center">
+                    <h2>$8</h2>
+                    <span className="mb-8">/month</span>
+                  </div>
+                  <div>
+                    <h2>OR</h2>
+                  </div>
+                  <div className="px-5 text-center">
+                    <h2>$12</h2>
+                    <span className="mb-8">/year</span>
+                  </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
-          <Col>
+          <Col sm="12" md="6">
             <Card>
               <Card.Header>Company</Card.Header>
               <Card.Body>
                 <div
                   style={{
-                    height: "50px",
+                    height: "60px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
@@ -189,11 +198,11 @@ const Home = () => {
             </Card>
           </Col>
         </Row>
-        <Row className="row-gap-y text-center text-default justify-content-md-center mt-5 mb-5">
+        <Row className="row-gap-y text-center text-default justify-content-md-center mt-5 mb-5 ios-padding p-3 px-5">
           <Col xs={12}>
             <h5 className="lead-3">
               <a href="https://app.nospray.us/signup">Sign up</a> now for a{" "}
-              <strong>1 month free</strong> trial
+              <strong>14 day free</strong> trial
             </h5>
           </Col>
         </Row>

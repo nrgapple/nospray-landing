@@ -4,6 +4,12 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 991.98px) {
+  ios-padding {
+    padding-bottom: 50px;
+  }
+}
+
 body {
   --bg-color: #313539;
   --secondary-bg-color: #292e34;
