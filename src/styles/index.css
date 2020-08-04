@@ -89,6 +89,12 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .extra {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
   .section {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -151,6 +157,8 @@ body {
   -webkit-box-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background: rgba(49, 53, 57, 0.7);
+  backdrop-filter: blur(5px);
 }
 
 .HomeNavBrand {

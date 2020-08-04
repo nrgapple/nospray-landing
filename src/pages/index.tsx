@@ -171,7 +171,7 @@ const Home = () => {
                     <h2>OR</h2>
                   </div>
                   <div className="px-5 text-center">
-                    <h2>$12</h2>
+                    <h2>$86</h2>
                     <span className="mb-8">/year</span>
                   </div>
                 </div>
@@ -200,7 +200,7 @@ const Home = () => {
         </Row>
         <Row className="row-gap-y text-center text-default justify-content-md-center mt-5 mb-5 ios-padding p-3 px-5">
           <Col xs={12}>
-            <h5 className="lead-3">
+            <h5 className="lead-3 extra">
               <a href="https://app.nospray.us/signup">Sign up</a> now for a{" "}
               <strong>14 day free</strong> trial
             </h5>
