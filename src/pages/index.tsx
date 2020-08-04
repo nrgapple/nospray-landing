@@ -50,6 +50,7 @@ const Home = () => {
                 loop
                 muted
                 poster="map.png"
+                playsInline
               >
                 <source src="demo.mp4" type="video/mp4"></source>
               </video>
