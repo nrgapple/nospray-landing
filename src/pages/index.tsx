@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { Navbar, NavbarBrand, Card, Button, ButtonGroup } from "react-bootstrap"
 import Layout from "../components/Layout"
-import Branding from "../util/banding"
+import { payments, branding } from "../util/branding"
 import Phone from "../components/Phone"
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
             width="50px"
             src="no-spray-192x192.png"
           />
-          <h1 className="pl-3">{Branding.storeName}</h1>
+          <h1 className="pl-3">{branding.storeName}</h1>
         </NavbarBrand>
         <Button variant="success" href="https://app.nospray.us">
           Hop In
@@ -158,7 +158,7 @@ const Home = () => {
         </Row>
         <Row className="p-3 px-5">
           <Col sm="12" md="6">
-            <Card className="mb-5">
+            <Card style={{ height: "100%" }}>
               <Card.Header>Individual</Card.Header>
               <Card.Body>
                 <div
@@ -169,31 +169,88 @@ const Home = () => {
                     alignItems: "center",
                   }}
                 >
-                  <div className="px-5 text-center">
-                    <h2>$8</h2>
-                    <span className="mb-8">/month</span>
+                  <div
+                    style={{
+                      height: "4rem",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div>
+                      <span
+                        style={{
+                          fontSize: "2rem",
+                        }}
+                        className="strikethrough-diagonal"
+                      >
+                        ${payments.oldMonthly}
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        style={{
+                          fontSize: "2rem",
+                        }}
+                      >
+                        ${payments.monthly}
+                      </span>
+                      <span>/month</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    height: "60px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <span>OR</span>
+                </div>
+                <div
+                  style={{
+                    height: "4rem",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <div>
+                    <span
+                      style={{
+                        fontSize: "2rem",
+                      }}
+                      className="strikethrough-diagonal"
+                    >
+                      ${payments.oldYearly}
+                    </span>
                   </div>
                   <div>
-                    <span>OR</span>
-                  </div>
-                  <div className="px-5 text-center">
-                    <h2>$86</h2>
-                    <span className="mb-8">/year</span>
+                    <span
+                      style={{
+                        fontSize: "2rem",
+                      }}
+                    >
+                      ${payments.yearly}
+                    </span>
+                    <span>/year</span>
                   </div>
                 </div>
               </Card.Body>
             </Card>
           </Col>
           <Col sm="12" md="6">
-            <Card>
+            <Card style={{ height: "100%" }}>
               <Card.Header>Company</Card.Header>
               <Card.Body>
                 <div
                   style={{
-                    height: "60px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    height: "100%",
                   }}
                 >
                   <a href="mailto:info@nospray.us">

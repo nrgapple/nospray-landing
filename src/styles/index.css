@@ -401,3 +401,24 @@ html {
   top: 2vh;
   margin-left: -0.5vh;
 }
+
+.strikethrough-diagonal {
+  position: relative;
+  color: #a0a0a0;
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+}
+
+.strikethrough-diagonal::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 45%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: inherit;
+  -webkit-transform: skewY(-20deg);
+  -moz-transform: skewY(-20deg);
+  transform: skewY(-20deg);
+}
