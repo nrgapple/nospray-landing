@@ -29,31 +29,28 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     headers: { origin },
   } = req
 
-    
-
-    const resp = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}?key=${process.env.NEXT_PUBLIC_API_KEY}`,
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          origin: origin!,
-        },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-          certId: id,
-        }),
-      }
-    )
-    res.status(resp.status)
-    console.log(resp.status)
-    if (resp.status !== 200) {
-      const respJson = await resp.json()
-      res.send(respJson)
-    } else {
-      res.end()
+  const resp = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}?key=${process.env.NEXT_PUBLIC_API_KEY}`,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        origin: origin!,
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password,
+        certId: id,
+      }),
     }
+  )
+  res.status(resp.status)
+  console.log(resp.status)
+  if (resp.status !== 200) {
+    const respJson = await resp.json()
+    res.send(respJson)
+  } else {
+    res.end()
   }
 }
