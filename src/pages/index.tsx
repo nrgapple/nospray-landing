@@ -24,7 +24,7 @@ const Home = () => {
           <h1 className="pl-3">{branding.storeName}</h1>
         </NavbarBrand>
         <Button variant="success" href="https://app.nospray.us">
-          Hop In
+          Try it Out
         </Button>
       </Navbar>
       <section>
@@ -35,13 +35,12 @@ const Home = () => {
               className="align-self-center ml-auto text-center pl-3 pr-3"
             >
               {" "}
-              <h2 className="p-5">
+              <h2 className="p-3">
                 <strong>Interactive</strong> Pesticide Hypersensitive Individual
                 Registry
               </h2>
-              <Button href="https://app.nospray.us/signup">Sign Up</Button>
             </Col>
-            <Col xs={12} lg={8} className="pt-5">
+            <Col xs={12} lg={8} className="pt-2">
               <video
                 className="media-landing"
                 height="100%"
